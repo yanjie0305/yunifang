@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/hot_item_iv"
+            android:layout_width="370px"
+            android:layout_height="320px"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hot_goods_name"
+        android:layout_width="370px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:maxLines="2"
+        android:textColor="#000"
+        android:textSize="35px" />
+
+    <LinearLayout
+        android:layout_width="370px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hot_shop_price"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textColor="#f89"
+            android:textSize="35px" />
+
+        <TextView
+            android:id="@+id/hot_market_price"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textColor="#66000000"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+</LinearLayout>

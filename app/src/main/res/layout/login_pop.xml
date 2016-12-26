@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="第三方快速登录"
+    android:textSize="25px"
+    android:textColor="#f89"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="30px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第三方快速登录用户不享受任何御泥坊会员权益"
+        android:textSize="25px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30px"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px">
+        <ImageView
+            android:id="@+id/login_qq"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_qq"/>
+        <ImageView
+            android:id="@+id/login_sina"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_sina"/>
+        <ImageView
+            android:id="@+id/login_weixin"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_weixin"/>
+    </LinearLayout>
+</LinearLayout>

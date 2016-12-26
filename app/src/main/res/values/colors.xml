@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="btn_backgrand_selector">#00000000</color>
+    <color name="btn_backgrand_normal">#ffff</color>
+    <color name="background1">#89F271</color>
+    <color name="background2">#F2AF71</color>
+    <color name="background3">#DE71F2</color>
+    <color name="background4">#36F067</color>
+    <color name="background5">#FF9D67</color>
+    <color name="background6">#7EF5CB</color>
+    <color name="colorWhite">#fff</color>
+    <color name="seach_color">#cac3c3</color>
+    <color name="colorTextMain">#FC6B87</color>
+    <color name="colorTextBlack">#535050</color>
+</resources>

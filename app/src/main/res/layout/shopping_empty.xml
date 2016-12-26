@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="购物车"
+        android:layout_centerHorizontal="true"
+        android:textSize="40px"
+        android:padding="40px"/>
+
+    <ImageView
+        android:id="@+id/empty_iv"
+        android:layout_width="280px"
+        android:layout_height="280px"
+        android:src="@mipmap/shopping_trolley_empty"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/empty_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="购物车还是空的哦"
+        android:layout_below="@+id/empty_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"/>
+    <TextView
+        android:id="@+id/empty_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="快去逛逛吧"
+        android:layout_below="@+id/empty_tv1"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/empty_btn"
+        android:layout_width="290px"
+        android:layout_height="100px"
+        android:text="逛一逛"
+        android:background="#f89"
+        android:layout_below="@+id/empty_tv2"
+        android:textColor="#ffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"/>
+</RelativeLayout>

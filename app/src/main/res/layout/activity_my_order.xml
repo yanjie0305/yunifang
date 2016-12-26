@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/my_order_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@mipmap/back_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="我的订单" />
+
+        <TextView
+            android:id="@+id/my_order_refund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="退款订单"
+            android:textColor="#f89" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#E5E5E5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/line_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部"
+                android:textColor="#f00" />
+
+            <TextView
+                android:id="@+id/tv_title_lin1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f00"
+                android:layout_marginTop="5dp"
+               android:gravity="center_vertical"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="0.01dp"
+            android:layout_weight="0.02"
+            android:layout_height="20dp"
+          android:gravity="center_vertical"
+            android:background="#E5E5E5"/>
+        <LinearLayout
+            android:id="@+id/line_pay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待付款"
+               />
+
+            <TextView
+                android:id="@+id/tv_title_lin2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E5E5E5"
+                android:layout_marginTop="5dp"
+               />
+        </LinearLayout>
+        <TextView
+            android:layout_width="0.01dp"
+            android:layout_weight="0.02"
+            android:layout_height="20dp"
+            android:background="#E5E5E5"/>
+        <LinearLayout
+            android:id="@+id/line_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待发货"
+               />
+
+            <TextView
+                android:id="@+id/tv_title_lin3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E5E5E5"
+                android:layout_marginTop="5dp"
+               />
+        </LinearLayout>
+        <TextView
+            android:layout_width="0.01dp"
+            android:layout_weight="0.02"
+            android:layout_height="20dp"
+            android:background="#E5E5E5"/>
+        <LinearLayout
+            android:id="@+id/line_receive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待收货"
+                />
+
+            <TextView
+                android:id="@+id/tv_title_lin4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E5E5E5"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="0.01dp"
+            android:layout_weight="0.02"
+            android:layout_height="20dp"
+            android:background="#E5E5E5"/>
+        <LinearLayout
+            android:id="@+id/line_evaluate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_evaluate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待评价"
+                 />
+
+            <TextView
+                android:id="@+id/tv_title_lin5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E5E5E5"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_order_vp">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<com.liaoinstan.springview.widget.SpringView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mask_frag_sv"
+    >
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frag_mask_gv"
+        android:verticalSpacing="20px"
+        android:horizontalSpacing="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:numColumns="2"></GridView>
+</com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>

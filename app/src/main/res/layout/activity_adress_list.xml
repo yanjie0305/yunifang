@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+<RelativeLayout
+    android:id="@+id/relat_adress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30px">
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:src="@mipmap/back_normal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择收货地址"
+        android:layout_centerHorizontal="true"
+        android:textSize="40px"/>
+    <TextView
+        android:id="@+id/manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="管理"
+        android:layout_alignParentRight="true"
+        android:textSize="40px"
+        android:textColor="#f89"/>
+</RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_adress"
+        android:layout_below="@+id/relat_adress"
+        android:layout_above="@+id/addAdress"></ListView>
+    <Button
+        android:id="@+id/addAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加收货地址"
+        android:background="#f89"
+        android:textColor="#ffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

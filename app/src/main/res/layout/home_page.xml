@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="120px"
+        android:layout_gravity="center_horizontal"
+        android:padding="10px"
+        android:text="御泥坊VIP商城"
+        android:textColor="#f89"
+        android:textSize="60px" />
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/springView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.bwie.test.ynf_project.view.MyRoolViewPager
+                        android:id="@+id/home_vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="700px"></com.bwie.test.ynf_project.view.MyRoolViewPager>
+
+                    <LinearLayout
+                        android:id="@+id/ll_dots"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_alignBottom="@+id/home_vp"
+                        android:gravity="right"
+                        android:orientation="horizontal"></LinearLayout>
+                </RelativeLayout>
+
+                <com.bwie.test.ynf_project.view.MyGridView
+                    android:id="@+id/gv_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffff"
+                   android:gravity="center_horizontal"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="30px"
+                    android:numColumns="4"></com.bwie.test.ynf_project.view.MyGridView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/week_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="60px"
+                            android:background="#ffff"
+                            android:gravity="center_horizontal"
+                            android:textColor="#66000000" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="#ffff">
+                            <LinearLayout
+                                android:id="@+id/lin_week"
+                                android:layout_width="match_parent"
+                                android:layout_height="550px"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+                                <RelativeLayout
+                                    android:layout_width="200px"
+                                    android:layout_height="400px"
+                                    android:background="#11000000"
+                                    android:id="@+id/week_more">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:src="@mipmap/home_rank_list_more" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffff"
+                        android:gravity="center_horizontal"
+                        android:text="优惠活动"
+                        android:textColor="#66000000" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_centerInParent="true"
+                        android:background="#ffff"
+                        android:clipChildren="false">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/id_viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_gravity="right|top"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginRight="60dp"
+                            android:clipChildren="false"></android.support.v4.view.ViewPager>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="#ffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffff"
+                        android:gravity="center_horizontal"
+                        android:padding="10px"
+                        android:text="热门专题"
+                        android:textColor="#66000000" />
+
+                    <com.bwie.test.ynf_project.view.MyListView
+                        android:id="@+id/home_lv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:background="#ffff" />
+                </LinearLayout>
+
+                <com.bwie.test.ynf_project.view.MyGridView
+                    android:id="@+id/goods_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffff"
+                    android:numColumns="2" />
+
+                <TextView
+                    android:id="@+id/checkall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="查看所有商品"
+                    android:textColor="#66000000" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="280px"
+                        android:background="@mipmap/user_center_bg" />
+
+                    <ImageView
+                        android:id="@+id/settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="40px"
+                        android:src="@mipmap/user_setting" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/iv_user"
+                        android:layout_centerHorizontal="true">
+                    <ImageView
+                        android:id="@+id/no_mine_icon"
+                        android:layout_width="80px"
+                        android:layout_height="80px"
+                        android:layout_marginBottom="40px"
+                        android:src="@mipmap/user_icon_no_set"
+                        android:visibility="visible"/>
+                        <ImageView
+                            android:id="@+id/is_mine_icon"
+                            android:layout_width="80px"
+                            android:layout_height="80px"
+                            android:layout_marginBottom="40px"
+                            android:visibility="gone"
+                            />
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                           android:id="@+id/img_v0"
+                            android:layout_alignRight="@+id/is_mine_icon"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/iv_user"
+                        android:layout_centerHorizontal="true"
+                        android:text="ynf"
+                        android:visibility="gone"
+                        android:textColor="#000"/>
+                </RelativeLayout>
+                <Button
+                    android:layout_width="280px"
+                    android:layout_height="55px"
+                   android:layout_gravity="center_horizontal"
+                    android:background="@mipmap/login_btn_bg"
+                    android:text="登录"
+                    android:id="@+id/login_btn"/>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_wait_pay"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/wait_pay"
+                    android:gravity="center_horizontal"
+                    android:text="待付款" />
+
+                <RadioButton
+                    android:id="@+id/rb_wait_send_good"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/wait_send_good"
+                    android:gravity="center_horizontal"
+                    android:text="待发货" />
+
+                <RadioButton
+                    android:id="@+id/rb_wait_receive_good"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/wait_receive_good"
+                    android:gravity="center_horizontal"
+                    android:text="待收货" />
+
+                <RadioButton
+                    android:id="@+id/rb_wait_evaluate"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/wait_evaluate"
+                    android:gravity="center_horizontal"
+                    android:text="待评价" />
+
+                <RadioButton
+                    android:id="@+id/rb_wait_refund"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/wait_refund"
+                    android:gravity="center_horizontal"
+                    android:text="退款" />
+            </RadioGroup>
+
+            <com.bwie.test.ynf_project.view.MyListView
+                android:id="@+id/mine_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30px"></com.bwie.test.ynf_project.view.MyListView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

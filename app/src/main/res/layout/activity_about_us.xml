@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/aboutus_main"
+    >
+    <RelativeLayout
+        android:id="@+id/relat_aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:padding="20px">
+
+        <ImageView
+            android:id="@+id/aboutus_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginTop="10px"
+            android:src="@mipmap/back_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="20px"
+            android:text="关于我们"
+            android:textSize="50px" />
+
+        <ImageView
+            android:id="@+id/aboutus_share"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="10px"
+            android:src="@mipmap/share_normal" />
+    </RelativeLayout>
+
+<ImageView
+    android:layout_width="280px"
+    android:layout_height="280px"
+    android:id="@+id/aboutus_img"
+    android:src="@mipmap/ico_share_qrcode"
+    android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_width="350px"
+        android:layout_height="60px"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="260px"
+        android:layout_above="@+id/aboutus_img"
+        android:layout_below="@+id/relat_aboutus"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="御泥坊"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.2.1"
+                android:layout_marginTop="40px"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
